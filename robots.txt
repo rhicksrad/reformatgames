@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://deadformatgames.com/sitemap.xml
+Sitemap: https://rhicksrad.github.io/reformatgames/sitemap.xml
