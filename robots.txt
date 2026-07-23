@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rhicksrad.github.io/reformatgames/sitemap.xml
+Sitemap: https://reformatgames.com/sitemap.xml
