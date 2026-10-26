@@ -44,7 +44,7 @@ nav .brand { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-siz
 nav .links { margin-left: auto; display: flex; gap: 24px; }
 nav .links a { font-size: 13px; letter-spacing: .06em; color: var(--phosphor-dim); }
 nav .links a:hover { color: var(--phosphor); }
-@media (max-width: 640px) { nav .links { gap: 12px; } nav .links a { font-size: 11px; } }
+@media (max-width: 640px) { nav { flex-wrap: wrap; gap: 6px 16px; padding: 11px 16px; } nav .links { margin-left: 0; flex-wrap: wrap; gap: 4px 14px; } nav .links a { font-size: 11px; } }
 
 header.boot {
   min-height: 62vh;
@@ -91,3 +91,40 @@ h2 .dim, .dim { color: var(--phosphor-dim); }
 footer { border-top: 1px solid var(--line); padding: 36px 26px 48px; text-align: center; font-size: 13.5px; color: var(--phosphor-dim); }
 footer .sysline { color: var(--phosphor); letter-spacing: .08em; margin-bottom: 12px; }
 footer p { max-width: 720px; margin: 5px auto; }
+.disk + .disk { margin-top: 28px; }
+
+/* Galaxy Brain page: terminal frame, faction accents from the game's palette */
+:root { --gb-cyan: #55e1f2; --gb-red: #c8102e; --gb-purple: #b067ff; }
+header.boot.gb {
+  background:
+    radial-gradient(ellipse at 20% -10%, rgba(85,225,242,.08), transparent 55%),
+    radial-gradient(ellipse at 85% 110%, rgba(176,103,255,.09), transparent 55%),
+    var(--bg);
+}
+.gb-brain {
+  background: linear-gradient(90deg, var(--gb-cyan), var(--gb-purple) 55%, var(--gb-red));
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent; text-shadow: none;
+}
+.tagline b { color: var(--paper); font-weight: 600; }
+.gb-pitch { color: #9adbb8; margin-top: -10px; }
+.release-line { font-size: 14px; color: var(--magenta); letter-spacing: .04em; }
+
+.brain-levels { list-style: none; counter-reset: lvl; max-width: 780px; margin-bottom: 28px; }
+.brain-levels li { counter-increment: lvl; color: #9adbb8; padding: 8px 0 8px 46px; position: relative; border-bottom: 1px dashed var(--line); }
+.brain-levels li::before { content: "0" counter(lvl); position: absolute; left: 0; color: var(--phosphor-dim); }
+.brain-levels b { color: var(--paper); }
+
+.faction { --accent: var(--phosphor-dim); border: 1px solid var(--accent); background: var(--panel); margin-bottom: 28px; }
+.faction img { width: 100%; aspect-ratio: 12 / 5; object-fit: cover; border-bottom: 1px solid var(--line); }
+.faction .body { padding: 20px 24px 22px; }
+.faction .filename .attr { color: var(--accent); }
+.faction .filedesc { margin-bottom: 12px; }
+.subfactions { font-size: 13px; color: var(--accent); letter-spacing: .02em; }
+.faction.globois { --accent: var(--gb-cyan); }
+.faction.trihardchy { --accent: #ff4a5f; border-color: var(--gb-red); }
+.faction.costa { --accent: var(--gb-purple); }
+
+.run-pending { border-style: dashed; border-color: var(--phosphor-dim); color: var(--phosphor-dim); margin-top: 8px; cursor: default; }
+footer a { color: var(--phosphor-dim); }
+footer a:hover { color: var(--phosphor); }
