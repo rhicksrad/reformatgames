@@ -125,6 +125,10 @@ header.boot.gb {
 .faction.trihardchy { --accent: #ff4a5f; border-color: var(--gb-red); }
 .faction.costa { --accent: var(--gb-purple); }
 
+.gb-cta { margin: 22px 0 8px; }
+.gb-fine { font-size: 13px; color: var(--phosphor-dim); }
+a.run-live { margin: 8px 10px 0 0; }
+a.run-live:hover { background: var(--phosphor); color: var(--bg); }
 .run-pending { border-style: dashed; border-color: var(--phosphor-dim); color: var(--phosphor-dim); margin-top: 8px; cursor: default; }
 footer a { color: var(--phosphor-dim); }
 footer a:hover { color: var(--phosphor); }
