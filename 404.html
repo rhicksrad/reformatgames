@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>File not found — Reformat Games</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#070b09">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💾</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<nav>
+  <a class="brand" href="/">REFORMAT_GAMES<span class="cursor">▮</span></a>
+  <span class="links"><a href="/#games">A:\GAMES</a></span>
+</nav>
+<header class="boot notfound">
+  <div class="boot-inner">
+    <p class="prompt">C:\&gt; open <span id="path">this page</span></p>
+    <h1>FILE NOT<br>FOUND<span class="cursor big">▮</span></h1>
+    <p class="tagline">Abort, Retry, Fail? That file isn't on this disk. It may have been reformatted.</p>
+    <p class="actions" style="display:flex;gap:10px;flex-wrap:wrap">
+      <a class="run" href="/">&gt; RETRY — HOME</a>
+      <a class="run" href="/#games">&gt; dir A:\GAMES</a>
+    </p>
+  </div>
+</header>
+<script>document.getElementById("path").textContent = location.pathname;</script>
+</body>
+</html>
