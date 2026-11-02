@@ -22,7 +22,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💾</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:wght@400;600&family=Cinzel:wght@500&family=EB+Garamond&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {
@@ -33,24 +33,31 @@
   "url": "https://reformatgames.com/",
   "logo": "https://reformatgames.com/media/menu_backplate.png",
   "description": "Independent game studio. Old formats, reformatted.",
-  "sameAs": ["https://persianstrike.com/", "https://reformatgames.itch.io/"]
+  "sameAs": ["https://persianstrike.com/", "https://playshahanshah.com/", "https://reformatgames.itch.io/"]
 }
 </script>
 </head>
 <body>
 
+<a class="skip" href="#games">Skip to games</a>
+
 <nav>
   <a class="brand" href="index.html">REFORMAT_GAMES<span class="cursor">▮</span></a>
   <span class="links">
     <a href="#games">A:\GAMES</a>
+    <a href="#log">LOG</a>
     <a href="#about">README</a>
-    <a href="galaxy-brain.html">GALAXY_BRAIN</a>
-    <a href="https://persianstrike.com/">PERSIAN_STRIKE ↗</a>
+    <a href="https://reformatgames.itch.io/" rel="noopener">ITCH.IO ↗</a>
   </span>
 </nav>
 
-<header class="boot">
+<header class="boot home">
   <div class="boot-inner">
+    <div class="hero-art" aria-hidden="true">
+      <img src="media/galaxy-brain/the-sunday-gravy.jpg" alt="" class="a3">
+      <img src="media/shahanshah/header_capsule.jpg" alt="" class="a2">
+      <img src="media/menu_backplate.png" alt="" class="a1 pixel">
+    </div>
     <p class="prompt">C:\&gt; run studio.exe</p>
     <h1>REFORMAT<br>GAMES<span class="cursor big">▮</span></h1>
     <p class="tagline">We dig up the formats the industry buried — and reformat them for modern machines.</p>
@@ -58,37 +65,87 @@
       <span class="bar">██████████████████████</span>
       <span class="label">FORMAT COMPLETE — 100%</span>
     </div>
+    <ul class="hero-index" aria-label="Our games">
+      <li><a href="https://persianstrike.com/"><span class="drive">A:</span> PERSIAN_STRIKE<span class="tag">EARLY ACCESS</span></a></li>
+      <li><a href="https://playshahanshah.com/"><span class="drive">B:</span> SHAHANSHAH<span class="tag">FREE DEMO</span></a></li>
+      <li><a href="galaxy-brain.html"><span class="drive">C:</span> GALAXY_BRAIN<span class="tag">OUT NOW</span></a></li>
+    </ul>
   </div>
 </header>
+
+<aside class="bulletin" aria-label="Latest news">
+  <div class="bulletin-inner">
+    <span class="flag">NEW</span>
+    <p>SHAHANSHAH has its own home at <b>playshahanshah.com</b>, with the free Act I demo, its levels, and the game's searchable Encyclopedia.</p>
+    <a href="https://playshahanshah.com/">&gt; OPEN</a>
+  </div>
+</aside>
 
 <section id="games">
   <div class="wrap">
     <h2><span class="dim">C:\&gt;</span> dir A:\GAMES</h2>
     <p class="listing dim">Volume in drive A is REFORMAT &nbsp;·&nbsp; 3 file(s) found</p>
-    <a class="disk" href="https://persianstrike.com/">
-      <img src="media/menu_backplate.png" alt="PERSIAN STRIKE: RETRIBUTION key art — a gunship over dark water, oil derricks burning under a crescent moon" class="pixel">
+
+    <article class="disk game ps">
+      <a class="art" href="https://persianstrike.com/" tabindex="-1" aria-hidden="true">
+        <img src="media/menu_backplate.png" width="1747" height="900" alt="" class="pixel">
+      </a>
       <div class="body">
-        <p class="filename">PERSIAN_STRIKE.EXE <span class="attr">&lt;EARLY ACCESS — WINDOWS &amp; LINUX&gt;</span></p>
-        <p class="filedesc">A low-poly helicopter war crossed with an autonomous real-time war, where every pilot, building, bullet and bad decision persists. In Early Access on itch.io, and Campaign One is free.</p>
-        <span class="run">&gt; RUN PERSIAN_STRIKE — persianstrike.com</span>
+        <p class="status"><span class="chip">EARLY ACCESS</span> WINDOWS · LINUX · CAMPAIGN ONE FREE</p>
+        <h3 class="filename"><a href="https://persianstrike.com/">PERSIAN_STRIKE.EXE</a></h3>
+        <p class="sub">PERSIAN STRIKE: RETRIBUTION</p>
+        <p class="filedesc">A low-poly helicopter war crossed with an autonomous real-time war, where every pilot, building, bullet and bad decision persists. Campaign One is free.</p>
+        <p class="actions">
+          <a class="run primary" href="https://persianstrike.com/">&gt; RUN — persianstrike.com</a>
+        </p>
       </div>
-    </a>
-    <a class="disk" href="https://reformatgames.itch.io/shahanshah">
-      <img src="media/shahanshah/header_capsule.jpg" alt="SHAHANSHAH key art: workers haul stone up a half-built palace while cavalry and spearmen clash on the plain below">
+    </article>
+
+    <article class="disk game shah">
+      <a class="art" href="https://playshahanshah.com/" tabindex="-1" aria-hidden="true">
+        <img src="media/shahanshah/header_capsule.jpg" width="920" height="430" alt="" loading="lazy">
+      </a>
       <div class="body">
-        <p class="filename">SHAHANSHAH.EXE <span class="attr">&lt;FREE ACT I DEMO — WINDOWS &amp; LINUX&gt;</span></p>
-        <p class="filedesc">Pharaoh-style city and monument building meets Age of Empires battles, on the same map. Build Pasargadae in 530 BCE, raise the Tomb of Cyrus, and hold it against the raiders in the hills.</p>
-        <span class="run">&gt; RUN SHAHANSHAH — itch.io</span>
+        <p class="status"><span class="chip">FREE ACT I DEMO</span> WINDOWS · LINUX</p>
+        <h3 class="filename"><a href="https://playshahanshah.com/">SHAHANSHAH.EXE</a></h3>
+        <p class="sub">King of Kings · Pasargadae, 530 BCE</p>
+        <p class="filedesc">City and monument building meets real-time battles, on the same map. Build Pasargadae, raise the Tomb of Cyrus, and hold it against the raiders in the hills.</p>
+        <p class="actions">
+          <a class="run primary" href="https://playshahanshah.com/">&gt; RUN — playshahanshah.com</a>
+          <a class="run" href="https://playshahanshah.com/encyclopedia/">&gt; ENCYCLOPEDIA</a>
+          <a class="run" href="https://reformatgames.itch.io/shahanshah" rel="noopener">&gt; DEMO ON ITCH.IO</a>
+        </p>
       </div>
-    </a>
-    <a class="disk" href="galaxy-brain.html">
-      <img src="media/galaxy-brain/the-sunday-gravy.jpg" alt="Galaxy Brain card art — The Sunday Gravy, a purple-and-gold restaurant mega-yacht cruising past a sunset planet with a shark escort">
+    </article>
+
+    <article class="disk game gb">
+      <a class="art" href="galaxy-brain.html" tabindex="-1" aria-hidden="true">
+        <img src="media/galaxy-brain/the-sunday-gravy.jpg" width="1080" height="720" alt="" loading="lazy">
+      </a>
       <div class="body">
-        <p class="filename">GALAXY_BRAIN.EXE <span class="attr">&lt;OUT NOW — FREE ON ITCH.IO&gt;</span></p>
-        <p class="filedesc">A space-opera card duel for people who have opinions about space operas. Your ship is your board, your Captain is a menace, and every card is earned by playing. Season 1 is out now, free for Windows on itch.io.</p>
-        <span class="run">&gt; RUN GALAXY_BRAIN</span>
+        <p class="status"><span class="chip">OUT NOW · FREE</span> WINDOWS</p>
+        <h3 class="filename"><a href="galaxy-brain.html">GALAXY_BRAIN.EXE</a></h3>
+        <p class="sub">Season 1 · Core Dump</p>
+        <p class="filedesc">A space-opera card duel for people who have opinions about space operas. Your ship is your board, your Captain is a menace, and every card is earned by playing.</p>
+        <p class="actions">
+          <a class="run primary" href="galaxy-brain.html">&gt; RUN GALAXY_BRAIN</a>
+          <a class="run" href="https://reformatgames.itch.io/galaxy-brain" rel="noopener">&gt; FREE ON ITCH.IO</a>
+        </p>
       </div>
-    </a>
+    </article>
+  </div>
+</section>
+
+<section id="log">
+  <div class="wrap">
+    <h2><span class="dim">C:\&gt;</span> type CHANGES.LOG</h2>
+    <p class="listing dim">Most recent first</p>
+    <ol class="changelog">
+      <li><time datetime="2026-11-02">2026-11-02</time> <span>SHAHANSHAH gets its own site at <a href="https://playshahanshah.com/">playshahanshah.com</a>.</span></li>
+      <li><time datetime="2026-10-27">2026-10-27</time> <span>GALAXY BRAIN opens seats on the <a href="https://reformatgames.itch.io/galaxy-brain-admin-council" rel="noopener">Admin Council</a>.</span></li>
+      <li><time datetime="2026-10-27">2026-10-27</time> <span>GALAXY BRAIN Season 1 is out, free on <a href="https://reformatgames.itch.io/galaxy-brain" rel="noopener">itch.io</a>.</span></li>
+      <li><time datetime="2026-10-26">2026-10-26</time> <span>SHAHANSHAH's free Act I demo is listed on itch.io; PERSIAN STRIKE enters Early Access.</span></li>
+    </ol>
   </div>
 </section>
 
@@ -96,14 +153,19 @@
   <div class="wrap">
     <h2><span class="dim">C:\&gt;</span> type README.TXT</h2>
     <div class="readme">
-      <p>Reformat Games is an independent studio with a soft spot for the machines and genres the industry left behind — cartridge-era strike games, cassette mixtapes, and action movies that play it 90% straight.</p>
-      <p>We build small, dense, physical worlds in the free and open-source Godot Engine, on a simple release policy: <b>it ships when it's done.</b></p>
+      <p>Reformat Games is an independent studio with a soft spot for the machines and genres the industry left behind — cartridge-era strike games, monument-builders, card duels, and action movies that play it 90% straight.</p>
+      <p>We build small, dense, physical worlds with weather, fire, day and night, and armies that think for themselves, on a simple release policy: <b>it ships when it's done.</b></p>
     </div>
+    <ul class="contact">
+      <li><span class="dim">ITCH.IO</span> <a href="https://reformatgames.itch.io/" rel="noopener">reformatgames.itch.io</a></li>
+      <li><span class="dim">PERSIAN STRIKE</span> <a href="https://persianstrike.com/">persianstrike.com</a></li>
+      <li><span class="dim">SHAHANSHAH</span> <a href="https://playshahanshah.com/">playshahanshah.com</a></li>
+    </ul>
   </div>
 </section>
 
 <footer>
-  <p class="sysline">REFORMAT GAMES LLC · EST. 2026 · POWERED BY GODOT ENGINE</p>
+  <p class="sysline">REFORMAT GAMES LLC · EST. 2026</p>
   <p>© 2026 Reformat Games LLC. PERSIAN STRIKE: RETRIBUTION is a work of fiction — all names, places, factions, and events are fictional.</p>
   <p>Assets CC0 or original.</p>
 </footer>
