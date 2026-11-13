@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+# Fast checks before a push, on what the push changes against origin/main
+# (seconds, no Godot). Install once per clone:
+#   git config core.hooksPath tools/hooks
+# Skip one push with `git push --no-verify`.
+# - whitespace errors and conflict markers (git diff --check), CRLF
+# - shell syntax (bash -n), Python syntax, JSON that does not parse
+# - a new generated image with no PROVENANCE record beside it
+# - the C# build and the engine tests, when a .cs or .csproj changed
+set -u
+cd "$(git rev-parse --show-toplevel)" || exit 0
+base=$(git merge-base HEAD origin/main 2>/dev/null) || exit 0
+mapfile -t changed < <(git diff --name-only --diff-filter=ACMR "$base" HEAD)
+[ ${#changed[@]} -gt 0 ] || exit 0
+fails=0
+bad() { echo "pre-push: $*" >&2; fails=$((fails + 1)); }
+
+git diff --check "$base" HEAD -- . >&2 || bad "whitespace errors or conflict markers (above)"
+cs=0
+for f in "${changed[@]}"; do
+  [ -f "$f" ] || continue
+  case "$f" in
+    *.png|*.jpg|*.jpeg|*.webp|*.gif|*.glb|*.ogg|*.wav|*.flac|*.exr|*.ttf|*.otf) ;;
+    *) git show "HEAD:$f" 2>/dev/null | grep -qU $'\r' && bad "$f is committed with CRLF line endings (the repo is LF)" ;;
+  esac
+  case "$f" in
+    *.sh|tools/hooks/*) bash -n "$f" 2>&1 >&2 || bad "$f: shell syntax error" ;;
+    *.py) python3 -c 'import ast,sys; ast.parse(open(sys.argv[1], encoding="utf-8").read(), sys.argv[1])' "$f" >&2 || bad "$f: Python syntax error" ;;
+    *.json) python3 -c 'import json,sys; json.load(open(sys.argv[1], encoding="utf-8"))' "$f" 2>/dev/null || bad "$f is not valid JSON" ;;
+    *.cs|*.csproj|*.props) cs=1 ;;
+  esac
+  case "$f" in
+    assets/generated/*.png|assets/generated/*.jpg|assets/generated/*.jpeg|assets/generated/*.webp)
+      d=$(dirname "$f"); n=$(basename "$f")
+      { grep -qF "\"$n\"" "$d/PROVENANCE.json" 2>/dev/null || grep -qF "$n" "$d/PROVENANCE.md" 2>/dev/null; } ||
+        bad "$f has no PROVENANCE.json or PROVENANCE.md entry beside it"
+      ;;
+  esac
+done
+if [ "$cs" = 1 ] && command -v dotnet >/dev/null; then
+  log=$(mktemp)
+  { dotnet build GameNs.csproj -nologo -v q &&
+    dotnet run --project engine/GameNs.Engine.Tests -c Release; } > "$log" 2>&1 ||
+    { tail -n 20 "$log" >&2; bad "the C# build or the engine tests fail"; }
+  rm -f "$log"
+fi
+if [ "$fails" -gt 0 ]; then
+  echo "pre-push: $fails problem(s); fix them or push with --no-verify." >&2
+  exit 1
+fi

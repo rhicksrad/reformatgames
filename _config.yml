@@ -1,0 +1,10 @@
+# GitHub Pages builds reformatgames.com from this branch. The site is the
+# hand-written HTML at the top level; the studio standards, templates and
+# tools are read on GitHub and must not be published as pages.
+exclude:
+  - standards/
+  - templates/
+  - tools/
+  - README.md
+  - AGENTS.md
+  - CLAUDE.md

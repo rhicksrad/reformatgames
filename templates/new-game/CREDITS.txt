@@ -1,0 +1,10 @@
+GAME_NAME: CREDITS
+presented by Reformat Games LLC
+
+Powered by Qanat, the Reformat Games engine. Built with the Godot Engine
+(MIT licence, https://godotengine.org/license).
+
+LICENSED ASSETS
+
+(One entry per attribution-required asset: title, author, source URL,
+licence. Keep in step with docs/ASSET_MANIFEST.md and the in-game credits.)

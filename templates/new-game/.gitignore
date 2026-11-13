@@ -1,0 +1,33 @@
+# Godot
+.godot/
+/android/
+override.cfg
+
+# Local captures, logs and scratch (never documentation)
+.dev/
+*.tmp
+*.log
+
+# Exported builds (export only when asked; see AGENTS.md)
+/build/
+/export/
+
+# .NET build output
+bin/
+obj/
+.mono/
+
+# Editors and OS clutter
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+__pycache__/
+
+# Per-machine agent settings
+.claude/settings.local.json

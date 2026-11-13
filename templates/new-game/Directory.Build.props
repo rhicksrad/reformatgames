@@ -1,0 +1,8 @@
+<Project>
+  <!-- The editor, the perf tour and the rule tests run the Debug build.
+       Optimize every configuration so their numbers measure the code a
+       player runs; the debugger still attaches. -->
+  <PropertyGroup>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+</Project>
