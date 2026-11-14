@@ -7,7 +7,7 @@
 <meta name="description" content="Reformat Games is an independent studio making PERSIAN STRIKE: RETRIBUTION, SHAHANSHAH and GALAXY BRAIN on Qanat, its own game engine.">
 <link rel="canonical" href="https://reformatgames.com/">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#0e0e0f">
+<meta name="theme-color" content="#0f1216">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Reformat Games">
 <meta property="og:locale" content="en_US">
@@ -22,7 +22,7 @@
 <link rel="icon" href="media/icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {
@@ -41,106 +41,117 @@
 
 <a class="skip" href="#games">Skip to the games</a>
 
-<nav class="top">
-  <a class="brand" href="index.html">REFORMAT GAMES</a>
-  <span class="links">
-    <a href="#games">Games</a>
-    <a href="#qanat">Qanat</a>
-    <a href="#news">News</a>
-    <a href="#studio">Studio</a>
-    <a class="cta" href="https://reformatgames.itch.io/" rel="noopener">itch.io</a>
-  </span>
-</nav>
-
-<header class="home-hero">
-  <div class="slides" aria-hidden="true">
-    <img src="media/shahanshah/key_art.webp" alt="" width="1280" height="720" fetchpriority="high">
-    <img src="media/persian-strike/feetdry.jpg" alt="" width="1280" height="720">
-    <img src="media/galaxy-brain/bg-neutral.jpg" alt="" width="1080" height="720">
-  </div>
-  <div class="inner">
-    <p class="kicker">Independent game studio · Est. 2026</p>
-    <h1>REFORMAT GAMES</h1>
-    <p class="tagline">We dig up the formats the industry buried and rebuild them for modern machines: a helicopter war, a city builder of the Persian empire, and a card duel that badly needs to calm down. Underneath them runs Qanat, the engine we built out of them.</p>
-    <div class="buttons">
-      <a class="button" href="#games">See the games</a>
-      <a class="button ghost" href="#qanat">Meet the Qanat engine</a>
-    </div>
-    <p class="now-showing"><span>Now playing</span>
-      <a href="https://persianstrike.com/">Persian Strike</a>
-      <a href="https://playshahanshah.com/">SHAHANSHAH</a>
-      <a href="https://playgalaxybrain.com/">Galaxy Brain</a>
-    </p>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="media/icon.svg" alt="" width="30" height="30">Reformat Games</a>
+    <details class="nav">
+      <summary class="menu-btn" aria-label="Menu"><i></i>Menu</summary>
+      <nav class="nav-links" aria-label="Site menu" onclick="if(event.target.closest('a'))this.closest('details').open=false">
+        <a href="#games">Games</a>
+        <a href="#qanat">Qanat</a>
+        <a href="#news">News</a>
+        <a href="#studio">Studio</a>
+        <a class="cta" href="https://reformatgames.itch.io/" rel="noopener">itch.io</a>
+      </nav>
+    </details>
+    <nav class="nav-wide" aria-label="Site">
+        <a href="#games">Games</a>
+        <a href="#qanat">Qanat</a>
+        <a href="#news">News</a>
+        <a href="#studio">Studio</a>
+        <a class="cta" href="https://reformatgames.itch.io/" rel="noopener">itch.io</a>
+    </nav>
   </div>
 </header>
 
+<main>
+<section class="hero">
+  <div class="slides" aria-hidden="true">
+    <img class="p-shah" src="media/shahanshah/key_art.webp" alt="" width="1280" height="720" fetchpriority="high">
+    <img class="p-ps" src="media/persian-strike/feetdry.jpg" alt="" width="1280" height="720">
+    <img class="p-gb" src="media/galaxy-brain/bg-neutral.jpg" alt="" width="1080" height="720">
+  </div>
+  <div class="wrap">
+    <p class="kicker">Independent game studio</p>
+    <h1>Reformat<span>Games</span></h1>
+    <p class="lede">We dig up the formats the industry buried and rebuild them for modern machines: a helicopter war, a city builder of the Persian empire, and a card duel that badly needs to calm down. Underneath them runs <b>Qanat</b>, the engine we built out of them.</p>
+    <div class="buttons">
+      <a class="button" href="#games">See the games</a>
+      <a class="button ghost" href="#qanat">Meet Qanat</a>
+    </div>
+    <div class="channel" aria-hidden="true"></div>
+  </div>
+</section>
+
 <section class="band" id="games">
-  <p class="kicker">Three games</p>
-  <h2>The games</h2>
-  <p class="lead">Small, dense, physical worlds with weather, fire, day and night, and armies that think for themselves. Each has its own home; start there.</p>
-
-  <article class="game ps">
-    <a class="art" href="https://persianstrike.com/" tabindex="-1" aria-hidden="true">
+  <div class="wrap">
+    <p class="kicker">Three games</p>
+    <h2>The games</h2>
+    <p class="intro">Small, dense, physical worlds with weather, fire, day and night, and armies that think for themselves. Each has its own home; start there.</p>
+    <div class="games">
+    <article class="poster ps">
       <img src="media/persian-strike/feetdry.jpg" width="1280" height="720" alt="" loading="lazy">
-    </a>
-    <div class="body">
-      <p class="meta"><span class="chip">Early Access</span>Windows · Linux</p>
-      <h3><a href="https://persianstrike.com/">PERSIAN STRIKE: RETRIBUTION</a></h3>
-      <p class="sub">A helicopter war over a living front</p>
-      <p class="pitch">A low-poly gunship war crossed with an autonomous real-time war, where every pilot, building, bullet and bad decision persists. You fly the helicopter; the army fights on without your orders. Campaign One is free.</p>
-      <div class="buttons">
-        <a class="button" href="https://persianstrike.com/">Visit persianstrike.com</a>
-        <a class="button ghost" href="https://reformatgames.itch.io/persian-strike-retribution" rel="noopener">Get it on itch.io</a>
+      <div class="body">
+        <p class="meta"><span class="tag">Early Access</span>Windows · Linux</p>
+        <h3><a href="https://persianstrike.com/">Persian Strike: Retribution</a></h3>
+        <p class="sub">A helicopter war over a living front</p>
+        <p class="pitch">A low-poly gunship war crossed with an autonomous real-time war, where every pilot, building, bullet and bad decision persists. You fly; the army fights on without your orders. Campaign One is free.</p>
+        <div class="buttons">
+          <a class="button" href="https://persianstrike.com/">persianstrike.com</a>
+          <a class="button ghost" href="https://reformatgames.itch.io/persian-strike-retribution" rel="noopener">Get it on itch.io</a>
+        </div>
       </div>
-    </div>
-  </article>
-
-  <article class="game shah flip">
-    <a class="art" href="https://playshahanshah.com/" tabindex="-1" aria-hidden="true">
+    </article>
+    <article class="poster shah">
       <img src="media/shahanshah/key_art.webp" width="1280" height="720" alt="" loading="lazy">
-    </a>
-    <div class="body">
-      <p class="meta"><span class="chip">Early Access · Free demo</span>Windows · Linux</p>
-      <h3><a href="https://playshahanshah.com/">SHAHANSHAH</a></h3>
-      <p class="sub">A city builder of the Persian empire, 530 to 479 BCE</p>
-      <p class="pitch">Build the cities of the Persian empire from Cyrus's Pasargadae to the field of Plataea, march the King's armies to its great battles, and learn the history as you play from an illustrated Encyclopedia.</p>
-      <div class="buttons">
-        <a class="button" href="https://playshahanshah.com/">Visit playshahanshah.com</a>
-        <a class="button ghost" href="https://reformatgames.itch.io/shahanshah" rel="noopener">Free demo on itch.io</a>
+      <div class="body">
+        <p class="meta"><span class="tag">Early Access · Free demo</span>Windows · Linux</p>
+        <h3><a href="https://playshahanshah.com/">SHAHANSHAH</a></h3>
+        <p class="sub">A city builder of the Persian empire</p>
+        <p class="pitch">Build the cities of the Persian empire from Cyrus's Pasargadae to the field of Plataea, march the King's armies to its great battles, and learn the history as you play.</p>
+        <div class="buttons">
+          <a class="button" href="https://playshahanshah.com/">playshahanshah.com</a>
+          <a class="button ghost" href="https://reformatgames.itch.io/shahanshah" rel="noopener">Free demo on itch.io</a>
+        </div>
       </div>
-    </div>
-  </article>
-
-  <article class="game gb">
-    <a class="art" href="galaxy-brain.html" tabindex="-1" aria-hidden="true">
+    </article>
+    <article class="poster gb">
       <img src="media/galaxy-brain/the-sunday-gravy.jpg" width="1080" height="720" alt="" loading="lazy">
-    </a>
-    <div class="body">
-      <p class="meta"><span class="chip">Out now · Free</span>Windows</p>
-      <h3><a href="galaxy-brain.html">GALAXY BRAIN</a></h3>
-      <p class="sub">Season 1 · Core Dump</p>
-      <p class="pitch">A space-opera card duel for people who have opinions about space operas. Your ship is your board, your Captain is a menace, and every card is earned by playing. Nothing is for sale.</p>
-      <div class="buttons">
-        <a class="button" href="https://playgalaxybrain.com/">Visit playgalaxybrain.com</a>
-        <a class="button ghost" href="https://reformatgames.itch.io/galaxy-brain" rel="noopener">Free on itch.io</a>
+      <div class="body">
+        <p class="meta"><span class="tag">Out now · Free</span>Windows</p>
+        <h3><a href="galaxy-brain.html">Galaxy Brain</a></h3>
+        <p class="sub">Season 1 · Core Dump</p>
+        <p class="pitch">A space-opera card duel for people who have opinions about space operas. Your ship is your board, your Captain is a menace, and every card is earned by playing.</p>
+        <div class="buttons">
+          <a class="button" href="https://playgalaxybrain.com/">playgalaxybrain.com</a>
+          <a class="button ghost" href="https://reformatgames.itch.io/galaxy-brain" rel="noopener">Free on itch.io</a>
+        </div>
       </div>
+    </article>
     </div>
-  </article>
+  </div>
 </section>
 
 <section class="qanat" id="qanat" aria-labelledby="qanat-title">
-  <picture>
-    <source srcset="media/qanat/tunnel.webp" type="image/webp">
-    <img class="backdrop" src="media/qanat/tunnel.jpg" alt="" width="1672" height="941" loading="lazy">
-  </picture>
-  <div class="inner">
+  <div class="art" aria-hidden="true">
+    <picture>
+      <source srcset="media/qanat/tunnel.webp" type="image/webp">
+      <img src="media/qanat/tunnel.jpg" alt="" width="1672" height="941" loading="lazy">
+    </picture>
+  </div>
+  <div class="wrap">
     <p class="kicker">Our engine</p>
     <h2 id="qanat-title"><img class="wordmark" src="media/qanat/wordmark.svg" alt="Qanat" width="580" height="150"></h2>
-    <div class="rule"></div>
     <p class="say">A qanat is the ancient Persian water tunnel: dug by hand, running for miles under the desert, bringing water up at a town. <em>Nobody sees it, and everything grows because of it.</em> That is the job of an engine.</p>
-    <p class="more">Qanat is the Reformat Games engine. It grew out of Persian Strike, SHAHANSHAH and Galaxy Brain, and it is the base every new Reformat game starts from: a fix made for one game reaches all of them. <span class="pronounce">Say it ka-NAHT.</span></p>
+    <p class="more">Qanat is the Reformat Games engine. It grew out of Persian Strike, SHAHANSHAH and Galaxy Brain, and every new Reformat game starts from it, so a fix made for one game reaches all of them. Say it ka-NAHT.</p>
 
-    <div class="split">
+    <div class="stats" aria-label="Qanat in numbers">
+      <div class="stat"><b>17</b><span>engine modules</span></div>
+      <div class="stat"><b>3</b><span>games built on them</span></div>
+      <div class="stat"><b>20k</b><span>soldiers in one battle</span></div>
+    </div>
+
+    <div class="pillars">
       <div>
         <h3>The engine decides</h3>
         <p>Every rule, every random draw and every unit's next step lives in plain C# libraries with no graphics attached, tested headless by their own suites.</p>
@@ -151,56 +162,58 @@
       </div>
       <div>
         <h3>Same seed, same game</h3>
-        <p>Simulations are deterministic for a seed and a list of commands, so a battle can be replayed exactly and a bug can be caught the moment two runs diverge.</p>
+        <p>Simulations are deterministic for a seed and a list of commands, so a battle replays exactly and a bug shows the moment two runs diverge.</p>
       </div>
-    </div>
-
-    <div class="stats" aria-label="Qanat in numbers">
-      <div><b>17</b>engine modules</div>
-      <div><b>3</b>games built on them</div>
-      <div><b>20,000</b>soldiers in one battle</div>
     </div>
 
     <div class="systems">
       <div>
+        <span class="n">01</span>
         <h3>Armies that think</h3>
-        <p>Fronts, squads, formations, sieges, raids and attack waves, chosen by doctrine written as data, with land battles and ship battles that ram and board.</p>
-        <span class="from">From SHAHANSHAH and Persian Strike</span>
+        <p>Fronts, squads, formations, sieges, raids and attack waves, chosen by doctrine written as data. Land battles, and ship battles that ram and board.</p>
+        <span class="from">SHAHANSHAH · Persian Strike</span>
       </div>
       <div>
+        <span class="n">02</span>
         <h3>Roads and routes</h3>
         <p>Road networks and traffic, flow fields for whole armies, terrain heights and water, and boats that know how deep the river runs.</p>
-        <span class="from">From SHAHANSHAH and Persian Strike</span>
+        <span class="from">SHAHANSHAH · Persian Strike</span>
       </div>
       <div>
+        <span class="n">03</span>
         <h3>Everything comes down</h3>
         <p>Buildings collapse by cause and by material, throw debris that settles into rubble, and leave wrecks and dust behind.</p>
-        <span class="from">From SHAHANSHAH and Persian Strike</span>
+        <span class="from">SHAHANSHAH · Persian Strike</span>
       </div>
       <div>
+        <span class="n">04</span>
         <h3>Sun, moon and weather</h3>
-        <p>A real sun path and moon, and seasonal fronts of rain, snow, lightning, frost, mist, fog, dust and sandstorms, all moving on the wind.</p>
-        <span class="from">From SHAHANSHAH and Persian Strike</span>
+        <p>A real sun path and moon, and seasonal fronts of rain, snow, lightning, frost, mist, fog, dust and sandstorms, moving on the wind.</p>
+        <span class="from">SHAHANSHAH · Persian Strike</span>
       </div>
       <div>
+        <span class="n">05</span>
         <h3>Crowds by the thousand</h3>
         <p>Townsfolk and armies drawn in instanced batches, with animation baked into textures and detail that steps down with distance.</p>
-        <span class="from">From SHAHANSHAH and Persian Strike</span>
+        <span class="from">SHAHANSHAH · Persian Strike</span>
       </div>
       <div>
+        <span class="n">06</span>
         <h3>Rules as data</h3>
         <p>Strict data loading that names every unknown or mistyped field, deterministic replays, and a Glicko-2 ladder for ranked play.</p>
-        <span class="from">From all three games</span>
+        <span class="from">All three games</span>
       </div>
       <div>
+        <span class="n">07</span>
         <h3>Saves that survive</h3>
         <p>Atomic writes read back before they count, checksummed headers, a backup of every save it replaces, and recovery after a crash.</p>
-        <span class="from">From all three games</span>
+        <span class="from">All three games</span>
       </div>
       <div>
+        <span class="n">08</span>
         <h3>Sound with a mix</h3>
-        <p>Cue tables, rotating takes, voice limits and a battle mix that keeps a volley of arrows from drowning out everything else.</p>
-        <span class="from">From all three games</span>
+        <p>Cue tables, rotating takes, voice limits, and a battle mix that keeps a volley of arrows from drowning out everything else.</p>
+        <span class="from">All three games</span>
       </div>
     </div>
 
@@ -213,9 +226,10 @@
 </section>
 
 <section class="band" id="news">
-  <p class="kicker">Most recent first</p>
-  <h2>News</h2>
-  <div class="panel">
+  <div class="wrap">
+    <p class="kicker">Most recent first</p>
+    <h2>News</h2>
+    <p class="intro">One line per update. The devlogs live on itch.io.</p>
     <ol class="news">
       <li><time datetime="2026-11-12">12 Nov 2026</time> <span>SHAHANSHAH devlog: <a href="https://reformatgames.itch.io/shahanshah/devlog/1773695/remembered-battles-and-autumn-leaves" rel="noopener">Remembered Battles and Autumn Leaves</a>.</span></li>
       <li><time datetime="2026-11-10">10 Nov 2026</time> <span>SHAHANSHAH devlog: <a href="https://reformatgames.itch.io/shahanshah/devlog/1768128/boarding-parties-and-climbing-smoke" rel="noopener">Boarding Parties and Climbing Smoke</a>.</span></li>
@@ -228,29 +242,34 @@
 </section>
 
 <section class="band" id="studio">
-  <p class="kicker">About us</p>
-  <h2>The studio</h2>
-  <div class="studio">
-    <div class="panel">
-      <p>Reformat Games is an independent studio with a soft spot for the machines and genres the industry left behind: cartridge-era strike games, monument builders, card duels, and action movies that play it 90% straight.</p>
-      <p>We build our games on our own engine, Qanat, so the armies, the weather and the fire learned in one game carry into the next. Our release policy is simple: <b>it ships when it's done.</b></p>
-    </div>
-    <div class="panel">
-      <ul class="contact">
-        <li><span>Store</span><a href="https://reformatgames.itch.io/" rel="noopener">reformatgames.itch.io</a></li>
-        <li><span>Persian Strike</span><a href="https://persianstrike.com/">persianstrike.com</a></li>
-        <li><span>SHAHANSHAH</span><a href="https://playshahanshah.com/">playshahanshah.com</a></li>
-        <li><span>Galaxy Brain</span><a href="https://playgalaxybrain.com/">playgalaxybrain.com</a></li>
+  <div class="wrap">
+    <p class="kicker">About us</p>
+    <h2>The studio</h2>
+    <div class="studio">
+      <div class="words">
+        <p>Reformat Games is an independent studio with a soft spot for the machines and genres the industry left behind: cartridge-era strike games, monument builders, card duels, and action movies that play it 90% straight.</p>
+        <p>We build our games on our own engine, Qanat, so the armies, the weather and the fire learned in one game carry into the next. Our release policy is simple: <b>it ships when it's done.</b></p>
+      </div>
+      <ul class="links">
+        <li><a href="https://reformatgames.itch.io/" rel="noopener">reformatgames.itch.io <span>Store</span></a></li>
+        <li><a href="https://persianstrike.com/">persianstrike.com <span>Persian Strike</span></a></li>
+        <li><a href="https://playshahanshah.com/">playshahanshah.com <span>SHAHANSHAH</span></a></li>
+        <li><a href="https://playgalaxybrain.com/">playgalaxybrain.com <span>Galaxy Brain</span></a></li>
       </ul>
     </div>
   </div>
 </section>
+</main>
 
 <footer>
-  <p class="mark">REFORMAT GAMES</p>
-  <p class="qmark">Powered by <img src="media/qanat/wordmark.svg" alt="Qanat" width="80" height="21"></p>
-  <p>© 2026 Reformat Games LLC. PERSIAN STRIKE: RETRIBUTION is a work of fiction: all names, places, factions and events are fictional.</p>
-  <p class="small">Assets CC0 or original.</p>
+  <div class="wrap">
+    <div class="row">
+      <a class="brand" href="index.html"><img src="media/icon.svg" alt="" width="30" height="30">Reformat Games</a>
+      <span class="qmark">Powered by <img src="media/qanat/wordmark.svg" alt="Qanat" width="84" height="22"></span>
+    </div>
+    <p>© 2026 Reformat Games LLC. PERSIAN STRIKE: RETRIBUTION is a work of fiction: all names, places, factions and events are fictional.</p>
+    <p>Assets CC0 or original.</p>
+  </div>
 </footer>
 
 </body>

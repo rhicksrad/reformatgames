@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
-  <!-- Reformat Games icon: a stroke-drawn R on a dark tile with a gilded rim. -->
-  <rect x="3" y="3" width="114" height="114" rx="18" fill="#161617" stroke="#d2a94e" stroke-width="6"/>
-  <path d="M40 92 V28 H66 a18 18 0 0 1 0 36 H40 M64 64 L84 92" fill="none" stroke="#ecdfc4" stroke-width="11" stroke-linejoin="round" stroke-linecap="square"/>
+  <!-- Reformat Games icon: a stroke-drawn R in sand on a night tile, its leg the turquoise channel. -->
+  <rect width="120" height="120" rx="20" fill="#14171c"/>
+  <path d="M38 94 V26 H64 a19 19 0 0 1 0 38 H38" fill="none" stroke="#e8d3ae" stroke-width="12" stroke-linejoin="miter" stroke-linecap="square"/>
+  <path d="M64 66 L86 92" fill="none" stroke="#2ba6a0" stroke-width="12" stroke-linecap="round"/>
 </svg>
