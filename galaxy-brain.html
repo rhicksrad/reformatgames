@@ -7,7 +7,7 @@
 <meta name="description" content="Galaxy Brain is a free online deckbuilding card duel set in an original, foul-mouthed space-opera parody. Season 1 is out now: download it free on itch.io for Windows. Season 2 on Steam.">
 <link rel="canonical" href="https://reformatgames.com/galaxy-brain.html">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#0e0e0f">
+<meta name="theme-color" content="#0f1216">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Reformat Games">
 <meta property="og:locale" content="en_US">
@@ -22,7 +22,7 @@
 <link rel="icon" href="media/icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {
@@ -41,97 +41,120 @@
 }
 </script>
 </head>
-<body>
+<body class="gbpage">
 
 <a class="skip" href="#brain">Skip to the game</a>
 
-<nav class="top">
-  <a class="brand" href="index.html">REFORMAT GAMES</a>
-  <span class="links">
-    <a href="index.html#games">Games</a>
-    <a href="#factions">Factions</a>
-    <a href="#devlog">Devlog</a>
-    <a href="index.html#qanat">Qanat</a>
-    <a class="cta" href="https://reformatgames.itch.io/galaxy-brain" rel="noopener">Free on itch.io</a>
-  </span>
-</nav>
-
-<header class="page-hero" style="background-image:url('media/galaxy-brain/bg-neutral.jpg')">
-  <div class="inner">
-    <p class="kicker">Season 1 · Core Dump · Out now, free for Windows</p>
-    <h1>GALAXY <span class="gb-brain">BRAIN</span></h1>
-    <p class="tagline">Your ship is your board. Your Captain is a menace. Your brain is about to get very, very large.</p>
-    <div class="buttons">
-      <a class="button" href="https://reformatgames.itch.io/galaxy-brain" rel="noopener">Download free on itch.io</a>
-      <a class="button ghost" href="https://playgalaxybrain.com/">Visit playgalaxybrain.com</a>
-      <a class="button ghost" href="https://reformatgames.itch.io/galaxy-brain-admin-council" rel="noopener">Join the Admin Council</a>
-    </div>
-    <p class="fine">Available in the US only. Season 2 on Steam.</p>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="media/icon.svg" alt="" width="30" height="30">Reformat Games</a>
+    <details class="nav">
+      <summary class="menu-btn" aria-label="Menu"><i></i>Menu</summary>
+      <nav class="nav-links" aria-label="Site menu" onclick="if(event.target.closest('a'))this.closest('details').open=false">
+        <a href="index.html#games">Games</a>
+        <a href="#factions">Factions</a>
+        <a href="#devlog">Devlog</a>
+        <a href="index.html#qanat">Qanat</a>
+        <a class="cta" href="https://reformatgames.itch.io/galaxy-brain" rel="noopener">Free on itch.io</a>
+      </nav>
+    </details>
+    <nav class="nav-wide" aria-label="Site">
+        <a href="index.html#games">Games</a>
+        <a href="#factions">Factions</a>
+        <a href="#devlog">Devlog</a>
+        <a href="index.html#qanat">Qanat</a>
+        <a class="cta" href="https://reformatgames.itch.io/galaxy-brain" rel="noopener">Free on itch.io</a>
+    </nav>
   </div>
 </header>
 
+<main>
+<section class="page-hero">
+  <img src="media/galaxy-brain/bg-neutral.jpg" alt="" width="1080" height="720" fetchpriority="high">
+  <div class="wrap">
+    <p class="kicker">Season 1 · Core Dump · Free for Windows</p>
+    <h1>Galaxy <span class="gb-brain">Brain</span></h1>
+    <p class="lede">Your ship is your board. Your Captain is a menace. Your brain is about to get very, very large.</p>
+    <div class="buttons">
+      <a class="button" href="https://reformatgames.itch.io/galaxy-brain" rel="noopener">Download free</a>
+      <a class="button ghost" href="https://playgalaxybrain.com/">playgalaxybrain.com</a>
+      <a class="button ghost" href="https://reformatgames.itch.io/galaxy-brain-admin-council" rel="noopener">Admin Council</a>
+    </div>
+    <p class="fine">Available in the US only. Season 2 on Steam.</p>
+  </div>
+</section>
+
 <section class="band" id="brain">
-  <p class="kicker">How big is your brain?</p>
-  <h2>A free online card duel</h2>
-  <p class="lead">Galaxy Brain is a deckbuilding card duel set in an original, foul-mouthed space-opera parody. Pick one of three factions, crew your ship with aliens and underpaid robots, and fight other players (or a deeply smug AI) for the hull-cracking Legendaries of the Core Dump set.</p>
-  <div class="panel">
+  <div class="wrap">
+    <p class="kicker">How big is your brain?</p>
+    <h2>A free online card duel</h2>
+    <p class="intro">Galaxy Brain is a deckbuilding card duel set in an original, foul-mouthed space-opera parody. Pick one of three factions, crew your ship with aliens and underpaid robots, and fight other players (or a deeply smug AI) for the hull-cracking Legendaries of the Core Dump set.</p>
     <ol class="levels">
       <li><b>Small Brain:</b> play a card.</li>
       <li><b>Big Brain:</b> play a card <i>onto your ship</i>, because your ship is the board: a Bridge for your Captain, a fight Deck for your Crew, an Engine Room and Gear slots.</li>
       <li><b>Glowing Brain:</b> let your Captain give Orders, Board the Deck to throw hands, earn Renown, and Ascend into something far less reasonable.</li>
       <li><b>Galaxy Brain:</b> every card you play grows your Brain meter, and at full Galaxy Brain your dumbest, biggest cards come online. <i>It made sense at the time.</i></li>
     </ol>
+    <p class="note">Every card is earned by playing. No packs for sale, no premium currency, no "limited offer" pop-ups. Just you, 2,000 cards, and a galaxy that badly needs you to calm down.</p>
   </div>
-  <p class="note">Every card is earned by playing. No packs for sale, no premium currency, no "limited offer" pop-ups. Just you, 2,000 cards, and a galaxy that badly needs you to calm down.</p>
 </section>
 
 <section class="band" id="factions">
-  <p class="kicker">3 factions · 15 sub-factions</p>
-  <h2>Pick a side</h2>
-  <div class="factions">
-    <article class="faction globois">
-      <img src="media/galaxy-brain/the-patient-pagoda.jpg" width="1080" height="720" alt="The Patient Pagoda, a Globois pagoda warship drifting past a ringed planet while a freighter waits stuck behind it" loading="lazy">
-      <div class="body">
-        <h3>The Globois <small>Control</small></h3>
-        <p>Sanctimonious space monks with glowing energy axes. They don't want to fight you. They want you to <i>think about what you did.</i> Sighs that stop attacks, Auras that shield, and Redactions that blank your best card. Not mad. Just disappointed.</p>
-        <p class="subs">Old Glow · Aura Farmers · Bioluminati · Burnouts · Lil' Glows</p>
-      </div>
-    </article>
-    <article class="faction trihardchy">
-      <img src="media/galaxy-brain/cold-plunge-tender.jpg" width="1080" height="720" alt="Cold Plunge Tender, a red Trihardchy warship that is mostly an ice bath full of grinning crew" loading="lazy">
-      <div class="body">
-        <h3>The Trihardchy <small>Aggro</small></h3>
-        <p>An evil empire that paints everything red and is extremely proud of it. Flood the Deck, make a Dramatic Entrance, and win the damage race before anyone notices the fog machine.</p>
-        <p class="subs">Edgelord Court · The Grindset · The Legion of Acceptable Losses · Hype Ministry · Overkill-Works</p>
-      </div>
-    </article>
-    <article class="faction costa">
-      <img src="media/galaxy-brain/the-sunday-gravy.jpg" width="1080" height="720" alt="The Sunday Gravy, La Costa Mostra's restaurant mega-yacht flagship, cruising past a sunset planet with a shark escort" loading="lazy">
-      <div class="body">
-        <h3>La Costa Mostra <small>Theft</small></h3>
-        <p>A seafood crime family. Octopus dons, loan sharks in resort shirts, eel hitmen and crabs who will strip your ship for parts. They steal your fuel, lend it back at Vig, and avoid a fair fight at all costs.</p>
-        <p class="subs">Famiglia Tentacolli · Famiglia Squalo · Famiglia Murena · Famiglia Granchio · Famiglia Seppia</p>
-      </div>
-    </article>
+  <div class="wrap">
+    <p class="kicker">3 factions · 15 sub-factions</p>
+    <h2>Pick a side</h2>
+    <div class="factions" style="margin-top:28px">
+      <article class="faction globois">
+        <img src="media/galaxy-brain/the-patient-pagoda.jpg" width="1080" height="720" alt="The Patient Pagoda, a Globois pagoda warship drifting past a ringed planet while a freighter waits stuck behind it" loading="lazy">
+        <div class="body">
+          <h3>The Globois</h3><span class="role">Control</span>
+          <p>Sanctimonious space monks with glowing energy axes. They don't want to fight you. They want you to <i>think about what you did.</i> Sighs that stop attacks, Auras that shield, and Redactions that blank your best card. Not mad. Just disappointed.</p>
+          <p class="subs">Old Glow · Aura Farmers · Bioluminati · Burnouts · Lil' Glows</p>
+        </div>
+      </article>
+      <article class="faction trihardchy">
+        <img src="media/galaxy-brain/cold-plunge-tender.jpg" width="1080" height="720" alt="Cold Plunge Tender, a red Trihardchy warship that is mostly an ice bath full of grinning crew" loading="lazy">
+        <div class="body">
+          <h3>The Trihardchy</h3><span class="role">Aggro</span>
+          <p>An evil empire that paints everything red and is extremely proud of it. Flood the Deck, make a Dramatic Entrance, and win the damage race before anyone notices the fog machine.</p>
+          <p class="subs">Edgelord Court · The Grindset · The Legion of Acceptable Losses · Hype Ministry · Overkill-Works</p>
+        </div>
+      </article>
+      <article class="faction costa">
+        <img src="media/galaxy-brain/the-sunday-gravy.jpg" width="1080" height="720" alt="The Sunday Gravy, La Costa Mostra's restaurant mega-yacht flagship, cruising past a sunset planet with a shark escort" loading="lazy">
+        <div class="body">
+          <h3>La Costa Mostra</h3><span class="role">Theft</span>
+          <p>A seafood crime family. Octopus dons, loan sharks in resort shirts, eel hitmen and crabs who will strip your ship for parts. They steal your fuel, lend it back at Vig, and avoid a fair fight at all costs.</p>
+          <p class="subs">Famiglia Tentacolli · Famiglia Squalo · Famiglia Murena · Famiglia Granchio · Famiglia Seppia</p>
+        </div>
+      </article>
+    </div>
+    <p class="note">Plus the robots (unpaid, unionizing), the unaligned freelancers (questionable), and the Admin: the four-partition AI that runs the galaxy and votes on the rules every single round.</p>
   </div>
-  <p class="note">Plus the robots (unpaid, unionizing), the unaligned freelancers (questionable), and the Admin: the four-partition AI that runs the galaxy and votes on the rules every single round.</p>
 </section>
 
 <section class="band" id="devlog">
-  <p class="kicker">Season 1 out now · Season 2 on Steam</p>
-  <h2>Devlog</h2>
-  <p class="lead">Galaxy Brain is free. Cards and power are never for sale: the cards come from playing it. Version 0.1.0 is out for Windows. Development notes and patch notes go up on the itch.io devlog.</p>
-  <div class="buttons">
-    <a class="button" href="https://reformatgames.itch.io/galaxy-brain/devlog" rel="noopener">Read the devlog</a>
-    <a class="button ghost" href="https://reformatgames.itch.io/galaxy-brain" rel="noopener">Download free on itch.io</a>
+  <div class="wrap">
+    <p class="kicker">Season 1 out now · Season 2 on Steam</p>
+    <h2>Devlog</h2>
+    <p class="intro">Galaxy Brain is free. Cards and power are never for sale: the cards come from playing it. Version 0.1.0 is out for Windows. Development notes and patch notes go up on the itch.io devlog.</p>
+    <div class="buttons">
+      <a class="button" href="https://reformatgames.itch.io/galaxy-brain/devlog" rel="noopener">Read the devlog</a>
+      <a class="button ghost" href="index.html#games">All our games</a>
+    </div>
   </div>
 </section>
+</main>
 
 <footer>
-  <p class="mark">REFORMAT GAMES</p>
-  <p class="qmark">Powered by <img src="media/qanat/wordmark.svg" alt="Qanat" width="80" height="21"></p>
-  <p>© 2026 Reformat Games LLC. Galaxy Brain is a parody of the space-opera genre: all characters, factions and ships are original and fictional.</p>
-  <p class="small"><a href="index.html">Back to all games</a></p>
+  <div class="wrap">
+    <div class="row">
+      <a class="brand" href="index.html"><img src="media/icon.svg" alt="" width="30" height="30">Reformat Games</a>
+      <span class="qmark">Powered by <img src="media/qanat/wordmark.svg" alt="Qanat" width="84" height="22"></span>
+    </div>
+    <p>© 2026 Reformat Games LLC. Galaxy Brain is a parody of the space-opera genre: all characters, factions and ships are original and fictional.</p>
+    <p>Assets CC0 or original.</p>
+  </div>
 </footer>
 
 </body>

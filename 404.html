@@ -5,29 +5,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page not found | Reformat Games</title>
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#0e0e0f">
+<meta name="theme-color" content="#0f1216">
 <link rel="icon" href="/media/icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-<nav class="top">
-  <a class="brand" href="/">REFORMAT GAMES</a>
-  <span class="links"><a href="/#games">Games</a><a href="/#qanat">Qanat</a></span>
-</nav>
-<header class="page-hero lost" style="background-image:url('/media/qanat/tunnel.jpg')">
-  <div class="inner">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/media/icon.svg" alt="" width="30" height="30">Reformat Games</a>
+    <details class="nav">
+      <summary class="menu-btn" aria-label="Menu"><i></i>Menu</summary>
+      <nav class="nav-links" aria-label="Site menu" onclick="if(event.target.closest('a'))this.closest('details').open=false">
+        <a href="/#games">Games</a>
+        <a href="/#qanat">Qanat</a>
+        <a href="/#news">News</a>
+      </nav>
+    </details>
+    <nav class="nav-wide" aria-label="Site">
+        <a href="/#games">Games</a>
+        <a href="/#qanat">Qanat</a>
+        <a href="/#news">News</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="page-hero lost">
+  <img src="/media/qanat/tunnel.jpg" alt="" width="1672" height="941" style="object-position:72% 50%">
+  <div class="wrap">
     <p class="kicker">Page not found: <span id="path">this page</span></p>
-    <h1>LOST IN THE TUNNEL</h1>
-    <p class="tagline">That page isn't here. It may have been reformatted.</p>
+    <h1>Lost in the tunnel</h1>
+    <p class="lede">That page isn't here. It may have been reformatted.</p>
     <div class="buttons">
       <a class="button" href="/">Back to the studio</a>
       <a class="button ghost" href="/#games">See the games</a>
     </div>
   </div>
-</header>
+</section>
+</main>
 <script>document.getElementById("path").textContent = location.pathname;</script>
 </body>
 </html>
