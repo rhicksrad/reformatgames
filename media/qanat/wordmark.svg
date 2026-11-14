@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 580 150" width="580" height="150">
+  <!-- QANAT wordmark, drawn as strokes so it needs no font licence. The Q's
+       tail is the water channel in Qanat turquoise. Letters are clipped to
+       the cap height and baseline so the diagonal feet sit flat. -->
+  <defs><clipPath id="caps"><rect x="-20" y="-7" width="580" height="114"/></clipPath></defs>
+  <g fill="none" stroke="#E8D3AE" stroke-width="14" clip-path="url(#caps)">
+    <g stroke-linecap="square" stroke-linejoin="bevel">
+      <circle cx="50" cy="50" r="43"/>
+      <path d="M124 110 L169 0 L214 110"/>
+      <path d="M238 107 V-7 M318 107 V-7"/>
+      <path d="M342 110 L387 0 L432 110"/>
+      <path d="M456 0 H536 M496 0 V107"/>
+    </g>
+    <path d="M142 66 H196 M360 66 H414 M233 -14 L323 114" stroke-linecap="butt"/>
+  </g>
+  <path d="M64 68 L102 102" fill="none" stroke="#2BA6A0" stroke-width="14" stroke-linecap="round"/>
+</svg>
